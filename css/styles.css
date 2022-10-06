@@ -1,0 +1,97 @@
+
+/* цвет основного (в заголовках) cтекста - #000000 */
+/* цвет вторичного (а абзацах) текста - rgba(0, 0, 0, 0.8) - тут прозрачность 80% */
+/* цвет текста в кнопке register #ffffff (белий)*/
+/* цвет фона (background) в кнопке register #18A0FB (голубой) */
+/* цвет фона основной на странице - белый #ffffff */
+/* цвет фона (background) вторичный  - серий #f5f5f5  */
+
+/* */
+/* */
+:root {
+    --primary-text-color: rgba(0, 0, 0, 0.8);
+    --title-text-color: #000000;
+    --accent-color: #18A0FB;
+    --primary-white-color: #ffffff;
+
+}
+body {
+    color: var(--primary-text-color);
+    background-color: #fff;
+}
+
+.logo {
+    color: var(--title-text-color);
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}
+
+/* class list для списков, убираем точки вначале */
+.list {
+    list-style: none;
+}
+
+/* Site Nav */
+.site-nav .link {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus  {
+    color: var(--title-text-color);
+}
+
+/* hero секция */
+.hero-title {
+    color: var(--title-text-color);
+}
+
+/* Sections - остальние секции */
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* features */
+.feature-list .title {
+    color: var(--title-text-color);
+}
+
+.feature-list .link {
+    color: var(--accent-color);
+}
+
+/* секция Примеры работ */
+.work-list .title {
+    color: var(--title-text-color);
+}
+
+/* button  */
+.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+    font-size: 24px;
+    padding: 12px 24px;
+    display: inline-block;
+    border: 1px solid black;
+
+
+}
+
+.button.primary {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    border-color: transparent;
+}
+
+.button.secondary {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+    border-color: var(--accent-color)
+}
